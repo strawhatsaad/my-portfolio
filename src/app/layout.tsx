@@ -11,7 +11,7 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-  title: "My Portfolio",
+  title: "Muhammad Saad Anjum - Portfolio",
   description:
     "Muhammad Saad Anjum: Expert Full Stack Next.js Developer. Crafting high-performance web applications with Next.js, leveraging server-side rendering (SSR) and client-side interactivity. Skilled in building responsive, visually appealing frontends using Tailwind CSS. Explore my portfolio for examples of my work in Next.js, React, and modern web development technologies. Let's build your next innovative web solution.",
   applicationName: "Muhammad Saad Anjum - Portfolio",
