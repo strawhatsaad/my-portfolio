@@ -41,7 +41,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <SpeedInsights />
       <body
         className={twMerge(
           inter.variable,
@@ -50,6 +49,7 @@ export default function RootLayout({
         )}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
