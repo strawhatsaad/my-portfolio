@@ -15,7 +15,7 @@ const portfolioProjects = [
   {
     company: "Apex",
     year: "2024",
-    title: "Dark Saas Blockchain Site",
+    title: "Dark SaaS Blockchain Site",
     results: [
       { title: "Boosted sales by 20%" },
       { title: "Expanded customer reach by 35%" },
@@ -42,7 +42,7 @@ const portfolioProjects = [
   {
     company: "Innovative Co",
     year: "2022",
-    title: "Light Saas Landing Page",
+    title: "Light SaaS Landing Page",
     results: [
       { title: "Boosted sales by 20%" },
       { title: "Expanded customer reach by 35%" },
@@ -54,7 +54,7 @@ const portfolioProjects = [
   {
     company: "Acme Corp",
     year: "2022",
-    title: "Dark Saas Landing Page",
+    title: "Dark SaaS Landing Page",
     results: [
       { title: "Enhanced user experience by 40%" },
       { title: "Improved site speed by 50%" },
