@@ -1,14 +1,56 @@
 import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
 import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
 import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+import blockForgeLandingPage from "@/assets/images/blockforge-landing-page.png";
 import CheckCircleIcon from "@/assets/icons/check-circle.svg";
 import ArrowUpRight from "@/assets/icons/arrow-up-right.svg";
 import GrainImage from "@/assets/images/grain.jpg";
 import Image from "next/image";
 import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
+import { twMerge } from "tailwind-merge";
+import FeaturedSpan from "@/components/FeaturedSpan";
 
 const portfolioProjects = [
+  {
+    company: "Apex",
+    year: "2024",
+    title: "Dark Saas Blockchain Site",
+    results: [
+      { title: "Boosted sales by 20%" },
+      { title: "Expanded customer reach by 35%" },
+      { title: "Increased brand awareness by 15%" },
+    ],
+    link: "https://blockforge-eight.vercel.app",
+    image: blockForgeLandingPage,
+    rounded: true,
+    featured: true,
+  },
+  {
+    company: "Pulse",
+    year: "2023",
+    title: "AI Startup Landing Page",
+    results: [
+      { title: "Enhanced user experience by 40%" },
+      { title: "Improved site speed by 50%" },
+      { title: "Increased mobile traffic by 35%" },
+    ],
+    link: "https://ai-startup-landing-page-lemon.vercel.app",
+    image: aiStartupLandingPage,
+    featured: true,
+  },
+  {
+    company: "Innovative Co",
+    year: "2022",
+    title: "Light Saas Landing Page",
+    results: [
+      { title: "Boosted sales by 20%" },
+      { title: "Expanded customer reach by 35%" },
+      { title: "Increased brand awareness by 15%" },
+    ],
+    link: "https://light-saas-landing-page-lime.vercel.app",
+    image: lightSaasLandingPage,
+  },
   {
     company: "Acme Corp",
     year: "2022",
@@ -18,32 +60,8 @@ const portfolioProjects = [
       { title: "Improved site speed by 50%" },
       { title: "Increased mobile traffic by 35%" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
+    link: "",
     image: darkSaasLandingPage,
-  },
-  {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
-    results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
-    ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
-  },
-  {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
   },
 ];
 
@@ -71,6 +89,7 @@ export const ProjectsSection = () => {
                     <span>{project.company}</span>
                     <span>&bull;</span>
                     <span>{project.year}</span>
+                    {project.featured && <FeaturedSpan />}
                   </div>
                   <h3 className="font-serif text-2xl mt-2 md:mt-5 md:text-4xl">
                     {project.title}
@@ -98,7 +117,10 @@ export const ProjectsSection = () => {
                   <Image
                     src={project.image}
                     alt={project.title}
-                    className="mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none"
+                    className={twMerge(
+                      "mt-8 -mb-4 md:-mb-0 lg:mt-0 lg:absolute lg:h-full lg:w-auto lg:max-w-none",
+                      project.rounded ? "rounded-xl" : ""
+                    )}
                   />
                 </div>
               </div>
