@@ -28,7 +28,7 @@ export const ContactSection = () => {
               <SectionButton
                 title="Contact Me"
                 iconImage={<ArrowUpRightIcon className="size-6" />}
-                href="mailto:strawhatsaad123@gmail.com"
+                href="mailto:shazilanjum@gmail.com"
                 containerStyles="text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-900"
               />
             </div>
