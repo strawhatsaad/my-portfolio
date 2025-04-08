@@ -120,7 +120,7 @@ export const HeroSection = () => {
         </div>
         <div className="max-w-lg mx-auto">
           <h2 className="font-serif text-xl md:text-2xl text-center mt-8 tracking-wide">
-            Shazil Anjum
+            Muhammad Saad Anjum
           </h2>
           <h1 className="font-serif text-3xl md:text-5xl text-center mt-8 tracking-wide">
             Building Exceptional User Experiences
