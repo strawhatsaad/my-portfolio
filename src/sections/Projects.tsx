@@ -10,6 +10,11 @@ import SectionHeader from "@/components/SectionHeader";
 import Card from "@/components/Card";
 import { twMerge } from "tailwind-merge";
 import FeaturedSpan from "@/components/FeaturedSpan";
+import CarterAndWhite from "@/assets/images/carter-and-white.png";
+import ViviAndCo from "@/assets/images/vivi-and-co.png";
+import Seissence from "@/assets/images/seissence.png";
+import ChaiWala from "@/assets/images/chai-wala.png";
+import FocalOptical from "@/assets/images/focal-optical.png";
 
 const portfolioProjects = [
   {
@@ -27,6 +32,34 @@ const portfolioProjects = [
     featured: true,
   },
   {
+    company: "Carter & White",
+    year: "2025",
+    title: "Carter & White E-Commerce Site",
+    results: [
+      { title: "Boosted sales by 40%" },
+      { title: "Expanded customer reach by 45%" },
+      { title: "Increased brand awareness by 35%" },
+    ],
+    link: "https://carterandwhite.com",
+    image: CarterAndWhite,
+    rounded: true,
+    featured: true,
+  },
+  {
+    company: "Project Chaiwala",
+    year: "2025",
+    title: "Project Chaiwala E-Commerce Site",
+    results: [
+      { title: "Boosted sales by 30%" },
+      { title: "Expanded customer reach by 15%" },
+      { title: "Increased brand awareness by 30%" },
+    ],
+    link: "https://projectchaiwala.com/",
+    image: ChaiWala,
+    rounded: true,
+    featured: true,
+  },
+  {
     company: "Pulse",
     year: "2023",
     title: "AI Startup Landing Page",
@@ -40,6 +73,47 @@ const portfolioProjects = [
     featured: true,
   },
   {
+    company: "Seissense",
+    year: "2025",
+    title: "Seissense E-Commerce Site",
+    results: [
+      { title: "Boosted sales by 30%" },
+      { title: "Expanded customer reach by 15%" },
+      { title: "Increased brand awareness by 30%" },
+    ],
+    link: "https://seissense.com/",
+    image: Seissence,
+    rounded: true,
+    featured: true,
+  },
+  {
+    company: "Focal Optical",
+    year: "2025",
+    title: "Focal Optical E-Commerce Site",
+    results: [
+      { title: "Boosted sales by 60%" },
+      { title: "Expanded customer reach by 45%" },
+      { title: "Increased brand awareness by 30%" },
+    ],
+    link: "https://www.focaloptical.com",
+    image: FocalOptical,
+    rounded: true,
+    featured: true,
+  },
+  {
+    company: "Vivi & Co.",
+    year: "2025",
+    title: "Vivi & Co. E-Commerce Site",
+    results: [
+      { title: "Boosted sales by 20%" },
+      { title: "Expanded customer reach by 15%" },
+      { title: "Increased brand awareness by 25%" },
+    ],
+    link: "https://www.viviandco.shop",
+    image: ViviAndCo,
+    rounded: true,
+  },
+  {
     company: "Innovative Co",
     year: "2022",
     title: "Light SaaS Landing Page",
@@ -50,18 +124,6 @@ const portfolioProjects = [
     ],
     link: "https://light-saas-landing-page-lime.vercel.app",
     image: lightSaasLandingPage,
-  },
-  {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark SaaS Landing Page",
-    results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
-    ],
-    link: "",
-    image: darkSaasLandingPage,
   },
 ];
 
